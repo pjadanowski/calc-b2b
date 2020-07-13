@@ -1,0 +1,92 @@
+<div class="container">
+
+  <h3 class="py-5">Kalkulator wynagrodzenia B2B</h3>
+
+
+  <div class="row">
+    <div class="col-md-6 mb-5">
+
+      <div class="card mb-4">
+        <h5 class="text-lg">Informacje o zarobkach</h5>
+
+        <label for="netto-income">Przychód netto</label>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control form-control-lg" id="netto-income" [(ngModel)]="nettoIncome">
+        </div>
+
+        <label for="vat-rate">Stawka VAT</label>
+        <div class="input-group mb-3">
+          <select class="form-control" id="vat-rate" [(ngModel)]="vatRate">
+            <option value="0">0%</option>
+            <option value="5">5%</option>
+            <option value="8">8%</option>
+            <option value="23">23%</option>
+          </select>
+
+        </div>
+
+        <label for="vat-rate">Podatek dochodowy</label>
+        <div class="input-group mb-3">
+          <select class="form-control" id="vat-rate" [(ngModel)]="taxForm">
+            <option value="progrssive">Stawka progresywna (17% / 23%) </option>
+            <option value="line">Stawka liniowa (19%) </option>
+          </select>
+        </div>
+
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="taxFreeAmountSelected" [(ngModel)]="taxFreeAmountSelected">
+          <label class="custom-control-label" for="taxFreeAmountSelected">Uwzględnij kwotę wolną od podatku</label>
+        </div>
+
+
+      </div>
+
+      <div class="card mb-4">
+        <h5 class="text-lg">Składka ZUS</h5>
+
+        <div class="custom-control custom-radio">
+          <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+          <label class="custom-control-label" for="customRadio1"> Brak składki ZUS ("ulga na start") </label>
+          <small class="feedback"> (Pierwsze pół roku działaności bez ZUS) </small>
+        </div>
+        <div class="custom-control custom-radio">
+          <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+          <label class="custom-control-label" for="customRadio2"> Normalna składka ZUS</label>
+        </div>
+
+
+      </div>
+
+
+      <div class="card">
+        <h5> Koszta dodatkowe </h5>
+        ...
+      </div>
+    </div>
+
+
+    <!-- second column -->
+    <div class="col-md-6">
+      <div class="card">
+
+        <h5 class="text-lg">Podsumowanie</h5>
+
+        <div class="d-flex w-100 justify-content-between">
+          <div>Na czysto</div>
+          <div>555 zł </div>
+        </div>
+
+        <div class="d-flex justify-between">
+          <div>Podatek VAT</div>
+          <div>555 zł </div>
+        </div>
+
+        <div class="d-flex justify-between">
+          <div>Podatek dochodowy</div>
+          <div>555 zł </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

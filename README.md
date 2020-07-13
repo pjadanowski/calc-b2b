@@ -1,6 +1,5 @@
-# Angular 9 + Tailwind CSS banking app
+# Calculator B2B - Angular 9 
 
-This is app for the Duomly Angular 9 Course - Learn Angular 9 by building banking App
 
 ## Install
 

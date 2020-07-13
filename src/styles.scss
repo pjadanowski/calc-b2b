@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+// @import 'tailwindcss/base';
+// @import 'tailwindcss/components';
+// @import 'tailwindcss/utilities';
+
+@import 'assets/scss/tailwind-colors.scss';
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+
+html,
+body,
+#app {
+  font-family: 'Nunito', sans-serif;
+}
+
+.shadow {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.06);
+
+}
