@@ -1,0 +1,32 @@
+.card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    border: none;
+}
+
+.feedback {
+    width: 100%;
+    margin-top: .25rem;
+    font-size: .8em;
+    color: #464646;
+}
+
+.monthly, .yearly {
+    text-align: center;
+}
+
+.monthly {
+    font-size: 1.35em;
+}
+
+.hint {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    color: #464646;
+    letter-spacing: .85px;
+}
+
+.text-lg {
+    font-size: 150%;
+}
